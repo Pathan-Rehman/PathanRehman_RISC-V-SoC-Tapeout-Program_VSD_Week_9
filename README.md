@@ -1,35 +1,5 @@
 # VSDBabySoC: Complete Design Flow
 
-# Table of contents
-
-- [VSDBabySoC: Complete Design Flow](#vsdbabysoc-complete-design-flow)
-- [Yosys Synthesis Tutorial for BabySoC](#yosys-synthesis-tutorial-for-babysoc)
-- [Post-Synthesis of VSDBabySoC](#post-synthesis-of-vsdbabysoc)
-- [Post Synthesis Simulation and Waveforms](#post-synthesis-simulation-and-waveforms)
-- [Yosys Synthesis Tutorial for BabySoC](#yosys-synthesis-tutorial-for-babysoc)
-- [Post-Synthesis of VSDBabySoC](#post-synthesis-of-vsdbabysoc)
-- [Post Synthesis Simulation and Waveforms](#post-synthesis-simulation-and-waveforms)
-- [VSDBabySoC basic timing analysis](#vsdbabysoc-basic-timing-analysis)
-- [BabySoC Physical Design & Post-Route SPEF Generation](#babysoc-physical-design--post-route-spef-generation)
-- [Floorplan and Placement of VSDBabySoC in OpenROAD](#floorplan-and-placement-of-vsdbabysoc-in-openroad)
-- [Macro Configuration File Documentation](#macro-configuration-file-documentation)
-- [This proc is here to allow us to use 'return' to return early from this](#this-proc-is-here-to-allow-us-to-use-return-to-return-early-from-this)
-- [file which is sourced](#file-which-is-sourced)
-- [Repair design using global route parasitics](#repair-design-using-global-route-parasitics)
-- [Running DPL to fix overlapped instances](#running-dpl-to-fix-overlapped-instances)
-- [Run to get modified net by DPL](#run-to-get-modified-net-by-dpl)
-- [Route only the modified net by DPL](#route-only-the-modified-net-by-dpl)
-- [Repair timing using global route parasitics](#repair-timing-using-global-route-parasitics)
-- [Running DPL to fix overlapped instances](#running-dpl-to-fix-overlapped-instances)
-- [Run to get modified net by DPL](#run-to-get-modified-net-by-dpl)
-- [Route only the modified net by DPL](#route-only-the-modified-net-by-dpl)
-- [log_cmd global_route -start_incremental](#log_cmd-global_route--start_incremental)
-- [recover_power_helper](#recover_power_helper)
-- [Route the modified nets by rsz journal restore](#route-the-modified-nets-by-rsz-journal-restore)
-- [log_cmd global_route -end_incremental {*}$res_aware \](#log_cmd-global_route--end_incremental-res_aware-)
-- [Write SDC to results with updated clock periods that are just failing.](#write-sdc-to-results-with-updated-clock-periods-that-are-just-failing)
-- [Use make target update_sdc_clock to install the updated sdc.](#use-make-target-update_sdc_clock-to-install-the-updated-sdc)
-
 ## Introduction: VSDBabySoC Overview
 
 VSDBabySoC is a compact, educational SoC integrating RVMYTH (RISC-V CPU), high-multiplication PLL, and a 10-bit DAC. Its key aim is reliable digital-analog integration and IP calibration for comprehensive hardware experimentation.
